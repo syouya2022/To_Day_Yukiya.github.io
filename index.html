@@ -1,46 +1,57 @@
 <html>
-  <!DOCTYPE html>
-<meta charset="UTF-8">
-<font size ="3"><!-フォントサイズ->
-<br>
-①フィッシングの対策
-<br>
-<br>
-•金融機関では口座番号や暗証番号を電子メールで問い合わせないということ
-<br>
-<br>
-•Web ブラウザのアドレス欄の左端にある鍵のアイコンをクリックして表示される証明書から、アクセスしようとしている企業の Web サイトかを確認すること
-<br>
-<br>
-•ダイレクトメッセージで送られてきたURLはクリックしないようにすること。SNS として爆発的に流行したツイッターや Facebook などでは、本来のURL を短いものに変換した、いわゆる短縮 URL が利用されています。しかし、この短縮 URL ではクリックするとどこの Web サイトにアクセスするのがわからないため。
-<br>
-<br>
-②他のサイバー攻撃について
-<br>
-<br>
-・ランサムウェア
-<br>
-→ランサムウェア(Ransomware)とは、「Ransom（身代金）」と「Software（ソフトウェア）」を組み合わせて作られた名称であり、コンピュータウィルスの一種である。ウィルスに感染するとパソコン内に保存しているデータを勝手に暗号化されて使えない状態になったり、スマートフォンが操作不能になったりしてしまう。また、感染した端末の中のファイルが暗号化されるのみではなく、その端末と接続された別のストレージも暗号化される場合もある。そして、その制限を解除するための身代金を要求する画面を表示させるというウイルスである。
-<br>
-<br>
-・トロイの木馬
-<br>
-→有用な（少なくとも無害な）プログラムあるいはデータファイルのように偽装されていながら、その内に悪意あるウイルスとして機能する部分を隠し持っていて、何らかのトリガによりそれが活動するように仕組まれているファイル等を指す。トロイの木馬は、ウイルスによりネット接続設定などを変更し、外部からの接続を許可する。これにより攻撃者は被害者のパソコンを乗っ取って様々な被害をもたらす。
-<br>
-<br>
-・不正ログイン
-<br>
-→「不正ログイン」とは悪意ある第三者が他人のログイン情報を不正に入手し、なりすましてアクセスする行為のことです。
-通販サイトやネットバンキング、SNS、スマートフォンなど様々なものがターゲットになります。不正ログインの狙いは、『金銭やデータ、個人情報などを窃取すること』、『別の不正を行う際の媒体として利用すること』の2点が挙げられます。
-<br>
-<br>
-・MITM攻撃
-<br>
-→主にユーザーとサービスの間にサイバー犯罪者が入り込み、受け渡すデータを盗み見たり改ざんしたりする攻撃手法のことを指す。 一般的に、公衆無線LAN（Wi-Fi）を利用する際や、Webブラウザーでオンラインバンキングを利用する際などに注意が必要とされている。
+<link href="click_test.css" rel="stylesheet">
+<label for="menu">Click me!!</label>
+<input type="checkbox" id="menu">
+<ul class="dropdown">
+  <li>Company</li>
+  <li>Service</li>
+  <li>Contact</li>
+  <li>Links</li>
+  <li>Privacy</li>
+</ul>
+<style>
+.dropdown{
+  display:none;
+}
 
-<p>いかのURLからクイズページへ飛んでもらい、クイズを通して、サイバー攻撃への理解、対策を学ぶことができます。</p>
-</font>
-
-<a href = "https://www.apple.com/jp/">リンク</a>
-
+label,
+li{
+  display:block;
+  padding:2em;
+  background:gold;
+  border-bottom:#fff 1px solid;
+  font-family:sans-serif;
+  letter-spacing:.05em;
+  font-weight:bold;
+}
+li:hover,
+label:hover{
+  background:orange;
+}
+li::before,
+label::before{
+  content:"";
+  display:block;
+  position:absolute;
+  right:5%;
+  width:.5em;
+  height:.5em;
+  border-top:#000 2px solid;
+  border-left:#000 2px solid;
+  transform:rotate(135deg);
+}
+input[type="checkbox"]{
+  display:none;
+}
+label[for="menu"]{
+  display:block;
+  background:orange;
+}
+label[for="menu"]::before{
+  transform:rotate(225deg);
+}
+#menu:checked + .dropdown{
+  display:block;
+}
+</style>
 </html>
