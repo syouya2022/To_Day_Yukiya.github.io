@@ -1,23 +1,49 @@
-.one h1 {/*『①フィッシングの対策』についての設定*/
+.header_list {
+  display: flex;
+  /*横並び*/
+  justify-content: center;
+  /*中央寄せ*/
+}
+
+.header_list li{
+  display: flex;
+  /*横並び*/
+  justify-content: center;
+  /*中央寄せ*/
+}
+
+.header_logo p {
+  padding: 20px;
+  /*上下左右余白*/
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.one h1 {
+  /*『①フィッシングの対策』についての設定*/
   font-size: 32px;
   border-bottom: 4px solid #b0c4de;
 }
 
-.one p {/*『①フィッシングの対策』の説明についての設定*/
+.one p {
+  /*『①フィッシングの対策』の説明についての設定*/
   font-size: 18px;
 }
 
-.wrap h2 {/*『②他のサイバー攻撃について』のタイトルについての設定*/
+.wrap h2 {
+  /*『②他のサイバー攻撃について』のタイトルについての設定*/
   font-size: 32px;
   border-bottom: 4px solid #b0c4de;
 }
 
-.wrap {/*『②他のサイバー攻撃について』の全体についての設定*/
+.wrap {
+  /*『②他のサイバー攻撃について』の全体についての設定*/
   margin: 2em 0;
   padding: 0;
 }
 
-.wrap label {/*『②他のサイバー攻撃について』のタグについての設定*/
+.wrap label {
+  /*『②他のサイバー攻撃について』のタグについての設定*/
   display: block;
   padding: 8px;
   color: #fff;
@@ -28,11 +54,13 @@
   /*カーソルアイコンが指し指になる*/
 }
 
-.wrap input[type="checkbox"] {/*『②他のサイバー攻撃について』のタグCLICKについての設定*/
+.wrap input[type="checkbox"] {
+  /*『②他のサイバー攻撃について』のタグCLICKについての設定*/
   display: none;
 }
 
-.wrap .content {/*『②他のサイバー攻撃について』のタグについての設定*/
+.wrap .content {
+  /*『②他のサイバー攻撃について』のタグについての設定*/
   height: 0;
   padding: 0;
   overflow: hidden;
@@ -52,9 +80,3 @@
   min-height: 100%;
   width: 100%;
 }
-
-.header_logo{
-  padding: 20px;/*上下左右余白*/
-  font-size: 32px;
-}
-
