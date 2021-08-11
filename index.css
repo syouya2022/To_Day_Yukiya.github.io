@@ -1,0 +1,58 @@
+.one h1 {/*『①フィッシングの対策』についての設定*/
+  font-size: 32px;
+  border-bottom: 4px solid #b0c4de;
+}
+
+.one p {/*『①フィッシングの対策』の説明についての設定*/
+  font-size: 18px;
+}
+
+.wrap h2 {/*『②他のサイバー攻撃について』のタイトルについての設定*/
+  font-size: 32px;
+  border-bottom: 4px solid #b0c4de;
+}
+
+.wrap {/*『②他のサイバー攻撃について』の全体についての設定*/
+  margin: 2em 0;
+  padding: 0;
+}
+
+.wrap label {/*『②他のサイバー攻撃について』のタグについての設定*/
+  display: block;
+  padding: 8px;
+  color: #fff;
+  font-weight: bold;
+  /*一般的な太字の太さです。（数値で700を指定した場合と同じ）*/
+  background: #999;
+  cursor: pointer;
+  /*カーソルアイコンが指し指になる*/
+}
+
+.wrap input[type="checkbox"] {/*『②他のサイバー攻撃について』のタグCLICKについての設定*/
+  display: none;
+}
+
+.wrap .content {/*『②他のサイバー攻撃について』のタグについての設定*/
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.switch:checked+.content {
+  height: auto;
+  padding: 8px;
+  background: #f7f7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+.header_list li{
+  float: left;
+}
