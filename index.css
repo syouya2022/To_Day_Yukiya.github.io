@@ -53,6 +53,13 @@
   width: 100%;
 }
 
-.header_list li{
+.header_list ul li{
   float: left;
 }
+
+.header_logo{
+  padding: 20px;/*上下左右余白*/
+  font-size: 32px;
+}
+
+.wf-hannari { font-family: "Hannari"; }
