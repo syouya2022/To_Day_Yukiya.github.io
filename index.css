@@ -1,4 +1,6 @@
-body {}
+body {
+  padding: 5%;
+}
 
 .brand {
   /*ヘッダータイトル設定*/
