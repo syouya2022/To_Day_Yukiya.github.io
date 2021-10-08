@@ -1,36 +1,52 @@
-/*
-** The Header Media Queries **
-** Tweak as per your needs **
-*/
+body {}
+
 .brand {
   /*ヘッダータイトル設定*/
   font-weight: bold;
   font-size: 40px;
-  color:#000000;
+  color: #000000;
+  /*黒*/
   text-decoration: none;
+  /*アンダーライン削除*/
 }
 
 .site-header {
   /*ヘッダーの背景*/
   position: relative;
   background-color: #def7ff;
-  }
+}
 
 .site-header__wrapper {
   padding-top: 1rem;
-  padding-bottom: 1rem; }
-  @media (min-width: 600px)  /*　画面サイズが600pxからはここを読み込む　*/{
-    .site-header__wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 0;
-      padding-bottom: 0; } }
-@media (min-width: 600px)  /*　画面サイズが600pxからはここを読み込む　*/{
-  .nav__wrapper {
-    display: flex; } }
+  padding-bottom: 1rem;
+}
 
-@media (max-width: 599px) /* 599pxまでの幅の場合に適応される */{
+@media (min-width: 600px)
+
+/*　画面サイズが600pxからはここを読み込む　*/
+  {
+  .site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 600px)
+
+/*　画面サイズが600pxからはここを読み込む　*/
+  {
+  .nav__wrapper {
+    display: flex;
+  }
+}
+
+@media (max-width: 599px)
+
+/* 599pxまでの幅の場合に適応される */
+  {
   .nav__wrapper {
     position: absolute;
     top: 100%;
@@ -41,32 +57,42 @@
     visibility: hidden;
     opacity: 0;
     transform: translateY(-100%);
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
-    .nav__wrapper.active {
-      visibility: visible;
-      opacity: 1;
-      transform: translateY(0); } }
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+
+  .nav__wrapper.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .nav__item a {
   display: block;
-  padding: 1.5rem 1rem; }
+  padding: 1.5rem 1rem;
+}
+}
+}
 
 .nav__toggle {
-  display: none; }
-  @media (max-width: 599px)/* 599pxまでの幅の場合に適応される */ {
-    .nav__toggle {
-      display: block;
-      position: absolute;
-      right: 1rem;
-      top: 1rem; } }
+  display: none;
+}
 
- .nav__wrapper li{
-    list-style: none;
- }
+@media (max-width: 599px)
 
+/* 599pxまでの幅の場合に適応される */
+  {
+  .nav__toggle {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+}
 
-
-
+.nav__wrapper li {
+  list-style: none;
+}
 
 .header_list {
   display: flex;
@@ -95,24 +121,102 @@
   margin-top: 100px;
 }
 
+.one .one_a p {
+  font-size: 24px;
+  font-family: "游ゴシック", "Yu Gothic";
+  font-weight: bold;
+}
+
+.one .one_img {
+  text-align: center;
+}
+
+.one .one_img img {
+  width: 26%;
+  /* 横幅を割合で指定 */
+  height: auto;
+  /*
+   text-align: center;
+   */
+}
+
+.one .two_img {
+  text-align: center;
+}
+
+.one .two_img img {
+  width: 26%;
+  /* 横幅を割合で指定 */
+  height: auto;
+  /*
+   text-align: center;
+   */
+}
+
+.one .three_img {
+  text-align: center;
+}
+
+.one .three_img img {
+  width: 26%;
+  /* 横幅を割合で指定 */
+  height: auto;
+  /*
+   text-align: center;
+   */
+}
+
 .one p {
   /*『①フィッシングの対策』の説明についての設定*/
   font-size: 18px;
+  font-family: "メイリオ", "Meiryo";
+  font-weight: bold;
 }
 
-.wrap h2 {
+.two h2 {
   /*『②他のサイバー攻撃について』のタイトルについての設定*/
   font-size: 32px;
   border-bottom: 4px solid #b0c4de;
 }
 
-.wrap {
+.one .box6 {
+    width:1300px;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: #f0f7ff;
+    border: dashed 2px #5b8bd0;/*点線*/
+}
+.one .box6 p {
+    width:1350px;
+    margin: 0;
+    padding: 0;
+}
+
+.one .box29 {
+    margin: 2em 0;
+    background: #dcefff;
+}
+.one .box29 .box-title {
+    font-size: 1.2em;
+    background: #5fb3f5;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.one .box29 p {
+    width:1300px;
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.two {
   /*『②他のサイバー攻撃について』の全体についての設定*/
   margin: 2em 0;
   padding: 0;
 }
 
-.wrap label {
+.two label {
   /*『②他のサイバー攻撃について』のタグについての設定*/
   display: block;
   padding: 8px;
@@ -124,12 +228,12 @@
   /*カーソルアイコンが指し指になる*/
 }
 
-.wrap input[type="checkbox"] {
+.two input[type="checkbox"] {
   /*『②他のサイバー攻撃について』のタグCLICKについての設定*/
   display: none;
 }
 
-.wrap .content {
+.two .content {
   /*『②他のサイバー攻撃について』のタグについての設定*/
   height: 0;
   padding: 0;
@@ -149,4 +253,10 @@
   padding: 0;
   min-height: 100%;
   width: 100%;
+}
+
+.three h3 {
+  /*『②他のサイバー攻撃について』のタイトルについての設定*/
+  font-size: 32px;
+  border-bottom: 4px solid #b0c4de;
 }
